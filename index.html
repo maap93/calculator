@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Calculator</h1>
+        <div id="row0">
+            <div id="result">0</div>
+        </div>
+        <div id="row1">
+            <button onclick="getNumber(1)" id="number_1" style="width:15% !important;" class="button button1">1</button>
+            <button onclick="getNumber(2)" id="number_2" style="width:15% !important;" class="button button1">2</button>
+            <button onclick="getNumber(3)" id="number_3" style="width:15% !important;" class="button button1">3</button>
+            <button onclick="capture_char('+')" style="width:15% !important;" class="button button2">+</button>
+            
+        </div>
+        <div id="row2">
+            <button onclick="getNumber(4)" id="number_4" style="width:15% !important;" class="button button1">4</button>
+            <button onclick="getNumber(5)" id="number_5" style="width:15% !important;" class="button button1">5</button>
+            <button onclick="getNumber(6)" id="number_6" style="width:15% !important;" class="button button1">6</button>
+            <button onclick="capture_char('-')" style="width:15% !important;" class="button button2">-</button>
+            
+        </div>
+        <div id="row3">
+            <button onclick="getNumber(7)" id="number_7" style="width:15% !important;" class="button button1">7</button>
+            <button onclick="getNumber(8)" id="number_8" style="width:15% !important;" class="button button1">8</button>
+            <button onclick="getNumber(9)" id="number_9" style="width:15% !important;" class="button button1">9</button>
+            <button onclick="capture_char('/')" style="width:15% !important;" class="button button2">/</button>
+            
+        </div>
+        <div id="row4" style="width:62% !important;">
+            <button onclick="getNumber(0)" id="number_0" style="width:24% !important;" class="button button1">0</button>
+            <button onclick="capture_char('*')" style="width:24% !important; float: right;" class="button button2">*</button>
+        </div>
+        <div id="row5">
+            <button onclick="result_operation()" style="width:62% !important;" class="button button2">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
